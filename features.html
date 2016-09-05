@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8"> <!-- 16-bit Unicode -->
+  <meta name="author" content="Sarah Rosanna Busch">
+  <meta name="description" content="Technical information about the solar plant
+                                    and real time monitoring of the circuit. (Demo only)">
+  <title> ELEX267 </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!--
+<body onload="onload()">
+-->
+<body>
+<header>
+  <h1 id="title"> Features </h1>
+  <nav>
+    <input id="nav" type="button" value="Home" onclick="gotoHome()">
+    <input id="nav" type="button" value="Features" onclick="gotoFeatures()">
+    <input id="nav" type="button" value="About Me" onclick="gotoAbout()">
+  </nav>
+</header>
+
+<main>
+
+  <img id="circuit"
+    src="https://lh3.googleusercontent.com/-C3InyjAOjiI/VmkBGxda_DI/AAAAAAAAInU/OuIqGSKYWxM/s800-Ic42/circuitOff.png"
+    alt="Solar Plant Circuit"
+    usemap="#ledmap">
+  <map name="ledmap">
+    <area shape="rect" coords="490,20,530,50" onclick="greenSwitch()">
+    <area shape="rect" coords="590,20,630,50" onclick="redSwitch()">
+  </map>
+  <!--p id="r">red</p-->
+  <!--p id="g">green</p-->
+  <br><br><br>
+
+  <table>
+    <tr> <!-- Row 1 -->
+      <th> Analog Pin </th> <!-- Column 1 -->
+      <th> Real Time Value </th> <!-- Column 2 -->
+    </tr>
+    <tr> <!-- Row 2 -->
+      <td> AN0 </td>
+      <td>
+        <!-- <p id="solar">solar</p> -->
+        n/a
+      </td>
+    </tr>
+    <tr> <!-- Row3 -->
+      <td> AN1 </td>
+      <td>
+        <!-- <p id="battery1">battery1</p>-->
+        n/a
+      </td>
+    </tr>
+    <tr> <!-- Row4 -->
+      <td> AN2 </td>
+      <td>
+        <!-- <p id="battery2">battery2</p>-->
+        n/a
+      </td>
+    </tr>
+    <tr> <!-- Row4 -->
+      <td> AN3 </td>
+      <td>
+        <!-- <p id="greenLed">greenLed</p> -->
+        n/a
+      </td>
+    </tr>
+    <tr> <!-- Row5 -->
+      <td> AN4 </td>
+      <td>
+        <!-- <p id="redLed">redLed</redLed>-->
+        n/a
+      </td>
+    </tr>
+  </table>
+
+  <br><br><br>
+
+  <h2> References </h2>
+  <p id="pageFont">
+    <a href="http://www.w3schools.com/"
+      target="blank"> <!-- opens in new tab -->
+      w3schools.com
+    </a><br>
+    <a href="http://www.netduino.com/netduino3wifi/specs.htm"
+      target="blank">
+      netduino.com
+    </a><br>
+    <a href="https://channel9.msdn.com/Series/Javascript-Fundamentals-Development-for-Absolute-Beginners"
+      target="blank">
+      channel9.msdn.com
+    </a><br>
+  </p>
+
+</main>
+<script src="features.js"></script>
+
+</body>
+
+</html>

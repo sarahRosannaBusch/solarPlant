@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8"> <!-- 16-bit Unicode -->
+  <meta name="author" content="Sarah Rosanna Busch">
+  <meta name="date" content="December 2015"
+  <meta name="description" content="Control two LEDs that are powered by a micro solar plant
+                                    and monitors the circuit. (Demo not connected to real circuit.)">
+  <title> ELEX267 </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!--
+<body onload="onload()"> -->
+<body>
+<header>
+  <h1 id="title"> Solar Power Plant </h1>
+  <nav>
+    <input id="nav" type="button" value="Home" onclick="gotoHome()">
+    <input id="nav" type="button" value="Features" onclick="gotoFeatures()">
+    <input id="nav" type="button" value="About Me" onclick="gotoAbout()">
+  </nav>
+</header>
+
+<main>
+
+  <!--buttonUp.png-->
+  <img id="button"
+    src="https://lh3.googleusercontent.com/-G07OypRcV_I/VmTWvgDAwtI/AAAAAAAAIgE/ll_e6Ow2ct0/s800-Ic42/buttonUp.png"
+    alt="This is a clickable button."
+    onmouseover="touchButton()"
+    onmouseout="untouchButton()"
+    onclick="pressButton()">
+
+  <!-- ledOff.png -->
+  <img id="led"
+    src="https://lh3.googleusercontent.com/-mg77ycuissI/VmTWv2SO61I/AAAAAAAAIgM/ArCCdygsAc8/s288-Ic42/ledOff.png"
+    alt="This led is controlled by the buttons.">
+
+  <br><br>
+
+  <form onchange="changeLed()"> <!-- Lets the user pick the led's colour. -->
+  <p id="radioButtons">
+    <input type="radio" name="ledColour" value="red" checked> Red
+    <input type="radio" name="ledColour" value="green"> Green
+  </p>
+  </form>
+
+  <br>
+
+  <!--p id="pageFont">This webpage controls real LEDs that are powered by a battery that is
+    being charged by solar cells.</p> -->
+  <!--charge/discharge graphic-->
+  <img id="sun"
+    src="https://lh3.googleusercontent.com/-H5dhyynIjnU/VmZ1ty4pqZI/AAAAAAAAIiU/-F4ueuQQBDk/s800-Ic42/sun.png"
+    alt="Sun">
+  <img id="arrow"
+    src="https://lh3.googleusercontent.com/-qXKozZdJ9Wg/VmZ1txC9e7I/AAAAAAAAIiU/Bus6Ed1JflU/s800-Ic42/charging.png"
+    alt="Charging/Discharging">
+  <img id="battery"
+    src="https://lh3.googleusercontent.com/-PVfdH-XATFQ/VmZ1t0NjkpI/AAAAAAAAIiU/s7-ULPSXWJc/s800-Ic42/battery.png"
+    alt="Battery">
+    <p id="radioButtons"> <!-- bold font -->
+      <p id="batteryVolts">Battery Voltage: n/a</p>
+      <p id="batteryCurrent">Battery Current: n/a</p>
+    </p>
+
+</main>
+<footer>
+  <p id="pageFont">
+  created by Sarah Busch for ELEX267
+  <p>
+</footer>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
